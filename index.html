@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div class="header-logo">
-            <a href="index.html">
+            <a href="/">
                 <img src="img/logo.png" alt="Логотип">
             </a>
             <button class="nav-btn" id="navBtn">
@@ -91,11 +91,14 @@
                 <div class="block-title">
                     <h1 class="feedback-title">Write comment</h1>
                 </div>
-                <form class="feedback-form" action="#" method="POST">
-                    <input class="input-title" type="text" placeholder="Title" required>
-                    <textarea placeholder="Your comment" required></textarea>
-                    <input class="btn" type="submit" value="Send">
+                <form class="feedback-form" action="" method="POST" name="comment">
+                    <input class="input-title" type="text" placeholder="Title" name="title" id="postTitle" required>
+                    <textarea placeholder="Your comment" name="body" id="postBody" required></textarea>
+                    <input type="button" class="btn" onclick="parseForm(postTitle.value, postBody.value)" value="Send">
                 </form>
+                <div class="thx">
+                    You have added a comment.
+                </div>
             </div>
         </div>
     </section>
@@ -113,6 +116,7 @@
 
 
     <script src="js/main.js"></script>
+    <script src="js/addPostsOnAjax.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
