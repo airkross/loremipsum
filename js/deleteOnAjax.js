@@ -1,5 +1,5 @@
 function inputID() {
-    del(parseInt(prompt('Введите ID коментария:', '1')));
+    del(parseInt(prompt('Введите ID комментария:', '1')));
 }
 
 function del(id) {

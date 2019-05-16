@@ -32,5 +32,4 @@ function hideForm() {
     
     form.style.display = 'none';
     thx.style.display = 'block';
-
 }

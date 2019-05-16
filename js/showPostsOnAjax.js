@@ -48,6 +48,7 @@ window.onload = function () {
     });
 };
 
+
 function ajaxGet(url, callback) {
     var foo = callback || function (data) { };
 
